@@ -10,21 +10,37 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var companyLbl: UILabel!
+    @IBOutlet weak var eyecolorLbl: UILabel!
+    @IBOutlet weak var genderLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var aboutLbl: UILabel!
+    @IBOutlet weak var addressLbl: UILabel!
+    @IBOutlet weak var ageLbl: UILabel!
+    
+    var person:Person?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLabel.text = person?.name
+        emailLbl.text = person?.email
+        genderLbl.text = person?.gender
+        eyecolorLbl.text = person?.eyeColor
+        companyLbl.text = person?.company
+        addressLbl.text = person?.address
+        aboutLbl.text = person?.about
+        ageLbl.text = "\(String(describing: person!.age))"
+        
+        
+        
+        
+      
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
