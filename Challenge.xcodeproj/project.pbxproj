@@ -64,13 +64,13 @@
 		6400566223FFCBF400975CAF /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				6403CC3F240286A6009C85A9 /* View */,
 				6400567A23FFCC4E00975CAF /* Controller */,
 				6400567923FFCC2100975CAF /* ViewModel */,
 				6400567723FFCC0900975CAF /* Model */,
 				6400566323FFCBF400975CAF /* AppDelegate.swift */,
 				6400566523FFCBF500975CAF /* SceneDelegate.swift */,
 				6400566C23FFCBF600975CAF /* Assets.xcassets */,
-				6400566923FFCBF500975CAF /* Main.storyboard */,
 				6400566E23FFCBF600975CAF /* LaunchScreen.storyboard */,
 				6400567123FFCBF600975CAF /* Info.plist */,
 			);
@@ -101,6 +101,14 @@
 				6439CFCD2401D1AD0093FA12 /* ListTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		6403CC3F240286A6009C85A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6400566923FFCBF500975CAF /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
